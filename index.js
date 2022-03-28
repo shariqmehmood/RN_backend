@@ -24,8 +24,10 @@ app.use((req,res,next)=>{
         error:"bad request"
     })
 })
-app.listen(3000, () => {
+let PORT = process.env.PORT || 3000;
+
+
+app.listen(PORT, () => {
     console.log("run Port")
 });
-
 
